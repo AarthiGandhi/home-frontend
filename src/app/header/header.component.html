@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">HomeSweetHome</a>
+    </div>
+
+    <div class="navbar-default">
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+        routerLinkActive="active">
+        <a routerLink="groceries">Groceries</a>
+        </li>
+
+        <li role="presentation"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/passwords">Passwords</a>
+        </li>
+      </ul>
+    </div>
+</nav>

@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-lg-10 col-md-10 col-sm-10 col-xs 10">
+  <a
+style='cursor: pointer'
+class="list-group-item clearfix"
+[routerLink]="[grocery.name]"
+[routerLinkActive]="['active']">
+  <h4 class="list-group-item-heading">{{ grocery.name }}</h4>
+  <p class="list-group-item-text">{{ grocery.quantity }}</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs 2">
+<a [routerLink]="[grocery.name,'edit']"
+  class='btn list-group-item-heading'>Edit</a>
+</div>
+</div>
